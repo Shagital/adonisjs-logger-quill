@@ -2,7 +2,7 @@
 
 const _ = require('lodash')
 const Winston = require('winston')
-const QuillkHook = require('../hooks/QuillHook');
+const QuillHook = require('../hooks/QuillHook');
 
 
 /**
@@ -128,7 +128,7 @@ class Quill {
               })
             }
 
-            if (message && message.name) {
+            if (this.config.logEnv && message && message.name) {
               // if it's a Error instance, log the environment too
               let envVariables = process.env;
               let keys = Object.keys(envVariables);

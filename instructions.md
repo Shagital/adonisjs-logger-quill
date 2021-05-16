@@ -10,12 +10,24 @@ const providers = [
 
 Add new configuration inside `logger` module in `config/app.js`:
 ```js
-quill: {
-    name: Env.get('APP_NAME', 'adonis-app'),
-    driver: 'quill',
-    webhookUrl: Env.get('QUILL_WEBHOOK_URL'),
-    level: 'info',
-}
+/*
+      |--------------------------------------------------------------------------
+     | Quill Transport
+     |--------------------------------------------------------------------------
+     |
+     | Quill transport uses axios to send log data to quill channel
+     |
+     |
+     |
+     */
+    quill: {
+      name: Env.get('APP_NAME', 'adonis-app'),
+      driver: 'quill',
+      webhookUrl: Env.get('QUILL_WEBHOOK_URL'),
+      level: 'info',
+      appStart: false, // whether to create log when app is starting,
+      logEnv: false // should send env variables
+    }
 ```
 
 That's it! Now you can use Logger that will send data to Quill.
