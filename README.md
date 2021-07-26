@@ -1,4 +1,8 @@
 # Adonis Logger Quill <img src="https://pbs.twimg.com/profile_images/1364222827201581059/_MwGJ_wl_400x400.png" alt="Quill icon" width="25px" height="25px">
+![npm](https://img.shields.io/npm/dt/@shagital/adonisjs-logger-quill?style=plastic)
+![npm (scoped)](https://img.shields.io/npm/v/@shagital/adonisjs-logger-quill)
+![NPM](https://img.shields.io/npm/l/@shagital/adonisjs-logger-quill)
+
 Version [for **Adonis v4**]
 
 This service provider adds [Quill](https://docs.quill.chat/docs/specification) as a driver to [Adonis Logger](https://adonisjs.com/docs/4.1/logger).
